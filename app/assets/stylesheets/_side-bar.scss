@@ -1,0 +1,57 @@
+.side-bar {
+  height: 100%;
+  width:300px;
+  float:left;
+  &__user {
+    background-color: #253141;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    &__info {
+      width:260px;
+      height:18px;
+      display:flex;
+      justify-content: center;
+      background-color:#253141;
+      &__name {
+        color:white;
+        width:200px;
+        font-size:16px;
+        font-weight:bold;
+      }
+      &__items {
+        background-color:#253141;
+        width:60px;
+        display: flex;
+        justify-content:flex-end;
+        .fa.fa-edit {
+          color:white;
+          padding-right:5px;
+        }
+        .fa.fa-cog {
+          color:white;
+        }
+      }
+    }
+  }
+  &__group__list {
+    background-color: #2f3e51;
+    height:calc(100vh - 100px);
+    &__name {
+      color:white;
+      font-size: 15px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 5px;
+    }
+    &__message {
+      color:white;
+      font-size: 11px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
+  }
+}
