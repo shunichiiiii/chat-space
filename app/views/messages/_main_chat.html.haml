@@ -1,0 +1,28 @@
+.chat-main
+  .group__info
+    .group__info__leftcontent
+      .group__info__leftcontent__group-name wao
+      .group__info__leftcontent__member
+        %p.group__info__tag Member：
+        %p.group__info__member-name bo-bobo
+    =link_to "#" ,class: "edit-btn" do
+      Edit
+  .message-list
+    .message-list__info
+      %p.message-list__info__name bo-bobo
+      %p.message-list__date 2019/12/20(Mon) 15:37:01
+    %p.message-list__text おはよ
+    .message-list__info
+      %p.message-list__info__name bo-bobo
+      %p.message-list__date 2019/12/20(Mon) 15:43:01
+    %p.message-list__text やほー
+  .write-message
+    .write-message__frame
+      .write-message__frame__text
+        %p.write-message__frame__text--cation type a message
+        
+        %label{class: "input-box__image"}
+          = icon('far', 'image')
+          %input.image{type: "file"}
+      =link_to "#" ,class: "send-btn" do
+        Send
