@@ -35,23 +35,25 @@
       }
     }
   }
-  &__group__list {
+  &__group {
     background-color: #2f3e51;
     height:calc(100vh - 100px);
-    &__name {
-      color:white;
-      font-size: 15px;
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 5px;
-    }
-    &__message {
-      color:white;
-      font-size: 11px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 40px;
+    padding-top:20px;
+    padding-right:20px;
+    padding-left:20px;
+    &__list {
+      margin-bottom:40px;
+      &__name {
+        color:white;
+        font-size: 15px;
+        padding-bottom: 5px;
+      }
+      &__message {
+        color:white;
+        font-size: 11px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
   }
 }
