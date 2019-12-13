@@ -64,29 +64,27 @@
       font-size:14px;
     }
   }
-  .write-message {
+  .write_message {
     background-color: #d2d2d2;
     height:90px;
-    display:flex;
-    &__frame {
-      height:50px;
-      background-color:#d2d2d2;
+    &__form {
+      background-color: #d2d2d2;
+      padding-top:20px;
+      padding-bottom:20px;
+      padding-right:40px;
+      padding-left:40px;
       display:flex;
-      margin-top:20px;
-      margin-left:40px;
-      margin-right:40px;
-      margin-bottom:20px;
-      &__text {
-        width:calc(100vw - 487px);
+      &__frame {
         background-color:white;
-        margin-right:15px;
         display:flex;
-        justify-content: space-between;
-        &--cation {
-          color: #434a43;
-          padding-left:10px;
-          line-height:50px;
-          font-size:16px;
+        width:100%;
+        margin-right:15px;
+        &__text {
+          background-color:white;
+          width:910px;
+          padding-left:15px;
+          border:none;
+          height:50px;
         }
         .far.fa-image {
           color:black;
@@ -95,20 +93,19 @@
           font-size: 1.5em;
         }
       }
-    }
-    .send-btn {
-      background-color:#38aef3;
-      text-decoration: none;
-      color:white;
-      height:50px;
-      line-height:50px;
-      padding-right:30px;
-      padding-left:30px;
+      .send-btn {
+        background-color:#38aef3;
+        text-decoration: none;
+        color:white;
+        line-height:50px;
+        padding-right:30px;
+        padding-left:30px;
+      }
     }
   }
 }
 
 .image {
   display:none;
+  position: absolute;
 }
-
