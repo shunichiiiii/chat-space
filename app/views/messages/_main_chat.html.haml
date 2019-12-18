@@ -4,9 +4,9 @@
       .group__info__leftcontent__group-name 
         = @group.name
       .group__info__leftcontent__member
-        %p.group__info__tag Member：
         %p.group__info__member-name
-          = @group.users.each do |users|
+          Menber :
+          - @group.users.each do |users|
             = users.name
 
     =link_to edit_group_path(current_user) ,class: "edit-btn" do
@@ -20,6 +20,6 @@
           = f.text_field :content, class: 'write_message__form__frame__text', placeholder: 'type a message'
           %label{class: "input-box__image"}
             = icon('far', 'image')
-            %input.image{type: "file"}
+            = f.file_field :image, class: 'image'
         = f.submit 'Send', class: 'send-btn'
 

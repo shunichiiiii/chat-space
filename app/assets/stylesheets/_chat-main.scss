@@ -20,9 +20,6 @@
         padding-top:15px;
         display: flex;
         font-size:12px;
-        &__tag {
-          color: #999999;
-        }
         &__member-name {
           color:#999999
         }
@@ -45,24 +42,7 @@
     height:calc(100vh - 190px);
     padding-left:40px;
     padding-top:35px;
-    &__info {
-      display:flex;
-      &__name {
-        color:#333333;
-        font-size:16px;
-        padding-right:5px;
-      }
-      &__date {
-        color:#999999;
-        font-size:12px;
-      }
-    }
-    &__text {
-      padding-top:12px;
-      margin-bottom:46px;
-      color:#434a54;
-      font-size:14px;
-    }
+    overflow: scroll;
   }
   .write_message {
     background-color: #d2d2d2;
